@@ -34,6 +34,7 @@
 <li> Chess Station website will have an admin panel where the admin(s) will have the full power over the whole system. This includes edit the status of an order and delete an order, create a product (having edit and delete options).</li>
 <li> There will be a dashboard section where admin can see the information of whole system.</li>
 </ul>
+<p>&nbsp;</p>
 <p><strong>TECHNOLOGY</strong></p>
 <p> Chess Station will be using latest technologies for a user-friendly website.</p>
 <p><em>Frontend</em>: The frontend will be built using HTML, CSS, JavaScript.</p>
