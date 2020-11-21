@@ -10,7 +10,8 @@
 <p align="center"><strong>Group No</strong>: 14</p>
 <p align="center"><strong>Fall 2020</strong></p>
 <p align="center"><strong>Project Name</strong>: Chess Station (Online Chess Store)</p>
-<p align="center"><strong>Course No</strong>: CSE 299 <strong>Sec</strong><strong>:</strong> 2</p>
+<p align="center"><strong>Course Title</strong>: CSE 299 (Junior Design)</p>
+<p align="center"><strong>Section</strong><strong>:</strong> 2</p>
 <p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (SAS3)</p>
 <p align="center"><strong>Name</strong><strong>:</strong> Md. Abdullah Al Jobaer</p>
 <p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1512028042</p>
