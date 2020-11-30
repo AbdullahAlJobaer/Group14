@@ -38,7 +38,7 @@
 <p><strong>TECHNOLOGY</strong></p>
 <p> Chess Station will be using latest technologies for a user-friendly website.</p>
 <p><em>Frontend</em>: The frontend will be built using HTML, CSS, JavaScript.</p>
-<p><em>Backend</em>: The backend will be built using PHP. PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP 7 is the latest stable release.</p>
+<p><em>Backend</em>: The backend will be built using PHP.</p>
 <p><em>Database</em>: MySQL.</p>
 <p><em>Payment method</em>: Online payment and cash on delivery. Might use bKash payment gateway.</p>
 <p>&nbsp;</p>
