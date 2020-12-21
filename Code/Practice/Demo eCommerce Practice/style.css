@@ -432,3 +432,46 @@ h3, h4 {
 }
 
 
+
+/* Hero Media Query */
+
+@media only screen and (max-width: 999px) {
+  .hero__center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__right {
+    top: 50%;
+    position: absolute;
+  }
+
+  .hero__left {
+    position: absolute;
+    padding: 0 1rem;
+    top: 20%;
+  }
+
+  .hero__right img {
+    width: 55%;
+  }
+
+  .hero__btn {
+    padding: 1.1rem 2.8rem;
+  }
+
+  .hero .glide__arrows {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .hero,
+  .hero .glide__slides {
+    height: 60vh;
+  }
+
+  .hero__right {
+    display: none;
+  }
+}
