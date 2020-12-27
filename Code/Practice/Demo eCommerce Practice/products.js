@@ -120,3 +120,30 @@ if (categoryContainer) {
     }
   });
 }
+
+/* Product Details Left */
+const pic1 = document.getElementById("pic1");
+const pic2 = document.getElementById("pic2");
+const pic3 = document.getElementById("pic3");
+const pic4 = document.getElementById("pic4");
+const pic5 = document.getElementById("pic5");
+const picContainer = document.querySelector(".product__pictures");
+const zoom = document.getElementById("zoom");
+const pic = document.getElementById("pic");
+
+// Picture List
+const picList = [pic1, pic2, pic3, pic4, pic5];
+
+// Active Picture
+let picActive = 1;
+
+["mouseover", "touchstart"].forEach(event => {
+  if (picContainer) {
+    picContainer.addEventListener(event, e => {
+      const target = e.target.closest("img");
+      if (!target) return;
+      const id = target.id.slice(3);
+      changeImage(`./images/products/iPhone/iphone${id}.jpeg`, id);
+    });
+  }
+});
