@@ -885,3 +885,102 @@ span.dot::before {
   height: 1.5rem;
   fill: var(--grey);
 }
+
+
+/* Latest Products Media Query */
+
+@media only screen and (max-width: 999px) {
+  .product__header {
+    height: 25rem;
+  }
+
+  .product {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .latest__products .glide__arrow--left,
+  .related__products .glide__arrow--left {
+    left: 73%;
+  }
+
+  .latest__products .glide__arrow--right,
+  .related__products .glide__arrow--right {
+    right: 7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .latest__products .glide__arrow--left,
+  .related__products .glide__arrow--left {
+    left: 70%;
+  }
+
+  .latest__products .glide__arrow--right,
+  .related__products .glide__arrow--right {
+    right: 7%;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .product__header {
+    height: 20rem;
+  }
+
+  .product__btn:hover {
+    background-color: var(--black);
+    color: var(--primaryColor);
+  }
+
+  .product__header img {
+    width: 50%;
+  }
+
+  .product__footer h3 {
+    font-size: 1.4rem;
+  }
+
+  .product__btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    border: 1px solid var(--black);
+  }
+
+  .product ul a {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .product ul {
+    top: 25%;
+    left: 50%;
+    width: 16rem;
+    height: 4rem;
+  }
+
+  .rating svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .latest__products .glide__arrow--left,
+  .related__products .glide__arrow--left {
+    left: 66%;
+  }
+
+  .latest__products .glide__arrow--right,
+  .related__products .glide__arrow--right {
+    left: 85%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .product__header {
+    height: 12rem;
+  }
+
+  .product__footer h3 {
+    font-size: 1.2rem;
+  }
+}
