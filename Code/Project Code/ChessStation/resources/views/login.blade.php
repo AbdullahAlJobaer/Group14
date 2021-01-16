@@ -1,7 +1,7 @@
-@extends('master')
+@extends ('master')
 
-@section('content')
-    <div class="container">
+@section("content")
+    <div class="container custom-login">
         <div class="row pt-4">
             <div class="col-sm-4 mx-auto">
                 <form>
