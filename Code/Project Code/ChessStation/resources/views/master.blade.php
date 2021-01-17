@@ -54,5 +54,9 @@
         height: 300px;
     }
 
+    .search-box {
+        width: 500px !important;
+    }
+
 </style>
 </html>
