@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Cart;
+use App\Models\Order;
+
+
 use Session;
 use Illuminate\Support\Facades\DB;
 
@@ -54,7 +57,7 @@ class ProductController extends Controller
 
     function cartList()
     {
-        $userId = session::get('user')['id'];
+        $userId = Session::get('user')['id'];
 
         $products = DB::table('cart')
         ->join('products', 'cart.product_id', '=', 'products.id')
@@ -73,7 +76,7 @@ class ProductController extends Controller
 
     function orderNow() 
     {
-        $userId = session::get('user')['id'];
+        $userId = Session::get('user')['id'];
 
         $total= $products = DB::table('cart')
         ->join('products', 'cart.product_id', '=', 'products.id')
@@ -81,5 +84,26 @@ class ProductController extends Controller
         ->sum('products.price');
 
         return view('ordernow', ['total'=>$total]);
+    }
+
+    function placeOrder(Request $req)
+    {
+        $userId = Session::get('user')['id'];
+        $allCart= Cart::where('user_id', $userId)->get();
+        
+        foreach ($allCart as $cart)
+        {
+            $order= new Order;
+            $order->product_id=$cart['product_id'];
+            $order->user_id=$cart['user_id'];
+            $order->status="Pending";
+            $order->payment_method=$req->payment;
+            $order->payment_status="Pending";
+            $order->address=$req->address;
+            $order->save();
+            Cart::where('user_id', $userId)->delete();
+        }
+        $req->input();
+        return redirect('/');
     }
 }
