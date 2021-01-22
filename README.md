@@ -49,7 +49,7 @@
 
 <p><strong>(c) Login Page:</strong></p>
 <p>Login: A user can login by using his email address and password</p>
-<p align="center"><strong><img src="Documentation/Project Report/Images/Loginpage.png" alt="" width="850" height="400" /></strong></p>
+<p align="center"><strong><img src="Documentation/Project Report/Images/loginpage.png" alt="" width="850" height="400" /></strong></p>
 <p>&nbsp;</p>
 
 <p><strong>(d) Login and Logout Functionality with Session:</strong></p> 
@@ -67,7 +67,7 @@
 <p>Type the product or any letter to search:</p>
 <p align="center"><strong><img src="Documentation/Project Report/Images/search1.png" alt="" width="850" height="300" /></strong></p>
 <p>It will show the search page with searched products:</p>
-<p align="center"><strong><img src="Documentation/Project Report/Images/Search2.png" alt="" width="850" height="400" /></strong></p>
+<p align="center"><strong><img src="Documentation/Project Report/Images/search2.png" alt="" width="850" height="400" /></strong></p>
 <p>&nbsp;</p>
 
 
